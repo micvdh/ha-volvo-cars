@@ -833,6 +833,14 @@
                     }
                 }
             },
+            "charging_current_limit": {
+                "name": "Charging current limit",
+                "state_attributes": {
+                    "api_timestamp": {
+                        "name": "API timestamp"
+                    }
+                }
+            },
             "charging_connection_status": {
                 "name": "Charging connection status",
                 "state": {
