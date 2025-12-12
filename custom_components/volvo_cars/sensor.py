@@ -247,6 +247,15 @@ SENSORS: tuple[VolvoCarsSensorDescription, ...] = (
         available_fn=lambda vehicle: vehicle.has_battery_engine(),
     ),
     VolvoCarsSensorDescription(
+        key="charging_current_limit",
+        translation_key="charging_current_limit",
+        api_field="chargingCurrentLimit",
+        native_unit_of_measurement=ELECTRICAL_CURRENT_AMPERE,
+        device_class=SensorDeviceClass.BATTERY,
+        state_class=SensorStateClass.MEASUREMENT,
+        available_fn=lambda vehicle: vehicle.has_battery_engine(),
+    ),
+    VolvoCarsSensorDescription(
         key="charging_connection_status",
         translation_key="charging_connection_status",
         api_field="chargingConnectionStatus",
