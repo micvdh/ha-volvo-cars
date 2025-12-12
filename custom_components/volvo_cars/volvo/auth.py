@@ -40,6 +40,7 @@ _SCOPE = [
     "conve:warnings",
     "conve:windows_status",
     "energy:battery_charge_level",
+    "energy:charging_current_limit",
     "energy:charging_connection_status",
     "energy:charging_system_status",
     "energy:electric_range",
